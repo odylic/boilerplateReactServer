@@ -8,7 +8,7 @@ export default function Router() {
       {/* essentially a switch statement that chooses the component to render based on the path */}
       <Switch>
         <Route exact path="/" render={() => <App />} />
-        {/* <Route path="/mainApp" render={() => <MainApp />} /> */}
+        <Route path="/app" render={() => <App />} />
       </Switch>
     </BrowserRouter>
   );

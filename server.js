@@ -18,8 +18,13 @@ app.get('/api', (req, res) => {
   res.json({message: 'Hello from server this time'});
 });
 
+
+app.get('/app', function (req, res) {
+  res.sendFile(path.resolve(__dirname, './public/index.html'));
+});
+
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', '/index.html'));
+  res.sendFile(path.resolve(__dirname, './public/index.html'));
 });
 
 app.listen(PORT, () => {
