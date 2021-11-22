@@ -7,7 +7,7 @@ import 'regenerator-runtime/runtime';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
